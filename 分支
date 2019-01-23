@@ -1,0 +1,12 @@
+1) 远程仓库相关命令
+检出仓库：        $ git clone git://github.com/jquery/jquery.git
+查看远程仓库：$ git remote -v
+添加远程仓库：$ git remote add [name] [url]
+删除远程仓库：$ git remote rm [name]
+修改远程仓库：$ git remote set-url --push [name] [newUrl]
+拉取远程仓库：$ git pull [remoteName] [localBranchName]
+推送远程仓库：$ git push [remoteName] [localBranchName]
+
+*如果想把本地的某个分支test提交到远程仓库，并作为远程仓库的master分支，或者作为另外一个名叫test的分支，如下：
+$git push origin test:master         // 提交本地test分支作为远程的master分支
+$git push origin test:test              // 提交本地test分支作为远程的test分支
